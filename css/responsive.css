@@ -1,0 +1,104 @@
+@media screen and (max-width: 1180px) {
+  /*.hereIsMyClass { }*/
+    
+    body {
+      background: red;
+
+    }
+
+
+    .header-top {
+      height: 65px;
+    }
+
+    #logo-header {
+      width: 120px;
+      height: 40px;
+      float: left;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+
+   #logo-header img {
+      width: 110px;
+    }
+
+    .header-top .container {
+      width: 900px;
+    }
+
+    .main-menu .container {
+      width: 900px;
+    }
+
+    .contacts div {
+      margin-right: 20px;
+      font-size: 12px;
+    }
+ 
+}
+
+@media screen and (max-width: 918px) {
+    body {
+      background: blue;
+
+    }
+
+    .header-top {
+      height: 45px;
+    }
+
+    #logo-header {
+      width: 94px;
+      height: 37px;
+      margin-left: none;
+      margin-top: 10px;
+    }
+
+
+   #logo-header img{
+      width: 90px;
+    }
+    
+    .header-top .container {
+      width: 880px;
+      margin-left: none;
+    }
+
+    .main-menu .container {
+      width: 880px;
+    }
+
+    .contacts {
+      margin-top: 5px;
+    }
+
+    .contacts div {
+      margin-right: 8px;
+      font-size: 10px;
+      float: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 520px) {
+    body {
+      background: yellow;
+
+    }
+
+    #logo-header {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    .contacts {
+      margin-top: 5px;
+      float: none;
+    }
+
+
+}
