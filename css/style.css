@@ -15,19 +15,19 @@ body {
 	height: 85px;
 	width: 100%;
 	border-bottom: 1px solid #E5E5E5;
-	background: #F6F7EB;
+	background: #FFF; /*#F6F7EB;*/
 }
 
 .header-top  .container {
-	width: 1150px;
+	width: 100%;
 	height: 100%;
-	background: #F6F7EB;
 	margin: 0 auto; /*по вертикали | по горизонтали*/
 	                /* top right down left */
 }
 
 .contacts {
 	float: right;
+	margin-right: 200px;
 }
 
 .contacts div{
@@ -51,8 +51,12 @@ body {
 	width: 174px;
 	height: 57px;
 	float: left;
-	margin-top: 15px;
-	/*margin-left: 70px;*/
+	margin-top: 10px;
+	margin-left: 200px;
+}
+
+#logo-header img {
+      width: 100%;
 }
 
 .contacts div:last-child{ /*последний элемент*/
@@ -60,8 +64,12 @@ body {
 	margin-right: 0;
 }
 
+.nav-open {
+	display: none;
+}
+
 .main-menu  .container {
-	width: 1200px;
+	width: 100%;
 	height: 100%;
 	background: white;
 	margin: 0 auto; /*по вертикали | по горизонтали*/
@@ -116,15 +124,22 @@ body {
 
 }
 
-.b-owner:hover  {
+.nav-open {
+    margin-top: 20px;
+    margin-right: 16px;
+    float: right;
+    cursor: pointer;	
+}
+
+.b-owner:hover, .b-hidemenu:hover,.nav-open img:hover  {
 	color: #FFF;
 	background: #A6B03B;
 }
 
-.b-hidemenu:hover{
+/*.b-hidemenu:hover{
 	color: #FFF;
 	background: #A6B03B;
-}
+}*/
 
 .b-hidemenu {
 	width: 36px;
@@ -231,7 +246,7 @@ body {
 }
 
 .main-quote .container {
-	width: 800px;
+	width: 100%;
 	/*background: red;*/
 	margin: 0 auto;
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1428px) {
   /*.hereIsMyClass { }*/
     
     body {
@@ -6,34 +6,25 @@
 
     }
 
-
     .header-top {
       height: 65px;
     }
 
     #logo-header {
-      width: 120px;
+      width: 164px;
       height: 40px;
       float: left;
-      margin-left: 20px;
-      margin-top: 15px;
+      margin-left: 50px;
+      margin-top: 5px;
     }
 
-   #logo-header img {
-      width: 110px;
-    }
-
-    .header-top .container {
-      width: 900px;
-    }
-
-    .main-menu .container {
-      width: 900px;
+     #logo-header img{
+      width: 100%;
     }
 
     .contacts div {
       margin-right: 20px;
-      font-size: 12px;
+      font-size: 14px;
     }
  
 }
@@ -56,17 +47,17 @@
     }
 
 
-   #logo-header img{
-      width: 90px;
-    }
+/*   #logo-header img{
+      width: 80%;
+    }*/
     
     .header-top .container {
-      width: 880px;
+    
       margin-left: none;
     }
 
     .main-menu .container {
-      width: 880px;
+  
     }
 
     .contacts {
@@ -87,6 +78,18 @@
     body {
       background: yellow;
 
+    }
+
+    .nav-block {
+      display: none;
+    } 
+
+    .nav-open {
+      display: block;
+    }
+
+    .main-menu .b-owner {
+       margin-left: 16px;
     }
 
     #logo-header {
