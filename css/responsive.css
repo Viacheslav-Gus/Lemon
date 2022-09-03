@@ -2,7 +2,7 @@
   /*.hereIsMyClass { }*/
     
     body {
-      background: red;
+      /*background: red;*/
 
     }
 
@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 918px) {
     body {
-      background: blue;
+      /*background: blue;*/
 
     }
 
@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 520px) {
     body {
-      background: yellow;
+      /*background: yellow;*/
 
     }
 
