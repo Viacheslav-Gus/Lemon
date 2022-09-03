@@ -1,0 +1,32 @@
+body {
+	/*background: yellow;*/
+}
+
+.slider {
+	max-width: 90%;
+	height: 600px;
+	margin: 3rem auto;
+}
+
+.slider .slider-img img{
+	max-width: 100%;
+	text-align: center;
+}
+
+.slider .slider-small-img {
+	margin: 0;
+	padding: 0;
+	max-width: 90%;
+	overflow-x: scroll;
+}
+
+.slider .slider-small-img li {
+	max-width: 200px;
+	float: left;
+	list-style: none;
+	margin: 10px;
+}
+
+.slider .slider-small-img li img{
+	max-width: 100%;
+}
