@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо: Отзывчивые вкладки (табы) с переходм в аккордеон</title>
+    <meta name="description" content="Пример реализации вкладкок(табов) с переходом в аккордеон при изменении размеров экрана просмотра, с помощью jQuey и CSS">
+    <meta name="keywords" content="вкладки, табы, аккордеон, вкладки css3, отзывчивые вкладки, адаптивный дизайн, css3, jQuery">
+    <meta name="author" content="Dobrovoimaster">
+    <link rel="icon" href="/favicon.ico">
+    <!-- Базовый CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+        <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js
+        </script>
+        <![endif]-->
+    <!-- Шрифт от Google -->
+    <link href='/' rel='stylesheet' type='text/css'>
+    <link href="/" rel="stylesheet" type="text/css" media="all"> </head>
+
+<body>
+    <!-- Разместите свой код здесь -->
+    <div class="top-nav">
+        <div class="topnav-wrapper">
+            <div class="topnav-link"> <a href="/otzyvchivye-vkladki-v-akkordeon" title="Вернуться к изучению деталей">« « Изучить Детали</a> </div>
+            <div class="topnav-logo"> <a href="/">{ -- dbmast.ru -- }</a> </div>
+        </div>
+    </div>
+    <header>
+        <h1>
+            Демо: Отзывчивые Вкладки (табы) с переходом в аккордеон jQuery & CSS3
+        </h1> 
+        <p>Для того чтобы увидеть переход вкладок в состояние аккордеона, просто уменьшайте размер окна браузера.</p>
+    </header>
+    <div class="container">
+       <!-- Базовый контейнер вкладок(табов) -->
+        <div class="tabs-box">
+           <!-- Список вкладок -->
+            <ul class="tabs">
+                <li class="active" rel="tab1">Вкладка 1</li>
+                <li rel="tab2">Вкладка 2</li>
+                <li rel="tab3">Вкладка 3</li>
+                <li rel="tab4" class="tab_last">Вкладка 4</li>
+            </ul>
+            <!-- Контейнер для блоков с содержанием -->
+            <div class="tab_container">
+               <!-- Панель заголовка в режиме аккордеона -->
+                <h3 class="d_active tab_accordion" rel="tab1">Вкладка 1</h3>
+                <!-- Блок вкладки с содержанием -->
+                <div id="tab1" class="tab_content" style="display: block;">
+                    <h2>Содержимое Вкладки 1</h2>
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                        <p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
+                </div>
+                <!-- конец #tab1 -->
+                <h3 class="tab_accordion" rel="tab2">Вкладка 2</h3>
+                <div id="tab2" class="tab_content" style="display: none;">
+                    <h2>Содержимое Вкладки 2</h2>
+                    <p><img src="http://placeimg.com/250/200/animals" class="img-left">
+                        <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.
+                            <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+                </div>
+                <!-- конец #tab2 -->
+                <h3 class="tab_accordion" rel="tab3">Вкладка 3</h3>
+                <div id="tab3" class="tab_content" style="display: none;">
+                    <h2>Содержимое Вкладки 3</h2>
+                    <p><img src="http://placeimg.com/250/200/nature" class="img-right">
+                        <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                            <p>Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло</p>
+                </div>
+                <!-- конец #tab3 -->
+                <h3 class="tab_accordion" rel="tab4">Вкладка 4</h3>
+                <div id="tab4" class="tab_content" style="display: none;">
+                    <h2>Содержимое Вкладки 4</h2>
+                    <div class="video-responsive">
+                        <iframe width="1280" height="720" src="http://www.youtube.com/embed/vRYJAAR4JDg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- конец #tab4 -->
+            </div>
+            <!-- конец .tab_container -->
+        </div>
+        <!-- конец .tabs-box -->
+        <p class="info"> сделано с любовью: <a href="/">@dobrovoi</a> </p>
+    </div>
+    <!-- /.container -->
+    <!-- End your code here -->
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+    <script>
+        // вкладки с содержанием
+        // 
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+        /* в режиме вкладок */
+        $("ul.tabs li").click(function () {
+            $(".tab_content").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+            $(".tab_accordion").removeClass("d_active");
+            $(".tab_accordion[rel^='" + activeTab + "']").addClass("d_active");
+        });
+        /* в режиме аккордеона */
+        $(".tab_accordion").click(function () {
+            $(".tab_content").hide();
+            var d_activeTab = $(this).attr("rel");
+            $("#" + d_activeTab).fadeIn();
+            $(".tab_accordion").removeClass("d_active");
+            $(this).addClass("d_active");
+            $("ul.tabs li").removeClass("active");
+            $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+        });
+        /* дополнительный класс tab_last, 
+        чтобы добавить границу к правой 
+        стороне последней вкладки. */
+        $('ul.tabs li').last().addClass("tab_last");
+    </script>
+    <!-- /.container -->
+</body>
+
+</html>
